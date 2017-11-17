@@ -1,5 +1,5 @@
 //Variables a utilizar globales
-var resultado = '0';
+var resultado = '';
 
 //Funcion que escribe el boton presionado en pantalla y realiza operacion
 function escribir(val){  
@@ -19,6 +19,18 @@ function escribir(val){
       this.resultado =(parseInt(operacion[0]) - parseInt(operacion[1])).toString();
     }
 
+    //Divide el texto donde encuentra el simbolo '*' en una lista de numeros
+    operacion = this.resultado.split('*');
+    if(operacion.length==2){//Si divide el texto en dos, quiere decir que se restan los numeros
+      this.resultado =(parseInt(operacion[0]) * parseInt(operacion[1])).toString();
+    }
+
+    //Divide el texto donde encuentra el simbolo '/' en una lista de numeros
+    operacion = this.resultado.split('/');
+    if(operacion.length==2){//Si divide el texto en dos, quiere decir que se restan los numeros
+      this.resultado =(parseInt(operacion[0]) / parseInt(operacion[1])).toString();
+    }
+
     if(val!='=')//Si no es simbolo igual '=', concatena val en texto
       this.resultado += val;
     console.log(this.resultado);
@@ -31,7 +43,7 @@ function escribir(val){
 //Inicializa variables en cero y limpia el valor dentro de el elemento con id resultadoop
 function borrar(){
   document.getElementById("resultadoop").innerHTML = '';
-  resultado = '0';
+  resultado = '';
 }
 
 //Multiplica un numero por otro
