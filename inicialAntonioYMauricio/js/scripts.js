@@ -3,7 +3,7 @@ var resultado = '';
 
 //Funcion que escribe el boton presionado en pantalla y realiza operacion
 function escribir(val){  
-  if(val!='=' && val!='+' && val!='-'){ //Si se escribe algo que no es '+' o '-', entonces es un numero, concatena al numero que se tiene el siguiente numero para formar numeros mas grandes, ejemplo: 1, 12, 122. Se agrego 2 despues de 1, luego otro 2 despues del 2
+  if(val!='=' && val!='+' && val!='-' && val!='*' && val!='/'){ //Si se escribe algo que no es '+' o '-', entonces es un numero, concatena al numero que se tiene el siguiente numero para formar numeros mas grandes, ejemplo: 1, 12, 122. Se agrego 2 despues de 1, luego otro 2 despues del 2
     this.resultado += val;//Concatena val en resultado
     console.log(this.resultado);//Imprime en concola para ver resultado
   }else{
@@ -44,6 +44,15 @@ function escribir(val){
 function borrar(){
   document.getElementById("resultadoop").innerHTML = '';
   resultado = '';
+}
+
+//Inicializa variables en cero y limpia el valor dentro de el elemento con id resultadoop
+function atras(){
+  res = document.getElementById("resultadoop").innerHTML;
+  res = res.substring(0,res.length-1);
+  
+  document.getElementById("resultadoop").innerHTML = res;
+  resultado = res;
 }
 
 //Multiplica un numero por otro
