@@ -1,5 +1,5 @@
 .numero{
-    width:40px;
+    width:400px;
     text-align: center;
 }
 .boton{
@@ -9,7 +9,7 @@
 .resultado{
     width:100px;
     height: 18px;
-    border: 1px solid gray;
+    border: 10px solid #2F6316;
     display:inline-block;
     text-align: right;
 }
