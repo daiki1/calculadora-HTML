@@ -7,14 +7,11 @@
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
+	
 	<body>
 		<br/><br/>
 		<center>
-			<button type="button" onclick="escribir(0)" class="numero">0</button>
-			<button type="button" onclick="escribir(1)" class="numero">1</button>
-			<button type="button" onclick="escribir(2)" class="numero">2</button>
-			<button type="button" onclick="escribir(3)" class="numero">3</button>
-			<button type="button" onclick="escribir('+')" class="numero">+</button>
+			
 			<button type="button" onclick="escribir('-')" class="numero">-</button>
 			<button type="button" onclick="escribir('=')" class="numero">=</button>
 			<button type="button" onclick="borrar()">Borrar</button>
@@ -48,24 +45,33 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-		<table border="1" width="100" height="100">
+		<table border="20" width="200" height="200">
 			<tr>
-				<td>A</td>
-				<td>B</td>
-				<td>C</td>
+				<td><button type="button" onclick="escribir(9)" class="numero">9</button></td>
+				<td><button type="button" onclick="escribir(8)" class="numero">8</button></td>
+				<td><button type="button" onclick="escribir(7)" class="numero">7</button></td>
 			</tr>
 			<tr>
-				<td>D</td>
-				<td>E</td>
-				<td>F</td>
+				<td><button type="button" onclick="escribir(6)" class="numero">6</button></td>
+				<td><button type="button" onclick="escribir(5)" class="numero">5</button></td>
+				<td><button type="button" onclick="escribir(3)" class="numero">3</button></td>
 			</tr>
 			<tr>
-				<td>G</td>
-				<td>H</td>
-				<td>I</td>
+				<td><button type="button" onclick="escribir(2)" class="numero">2</button></td>
+				<td><button type="button" onclick="escribir(1)" class="numero">1</button></td>
+				<td><button type="button" onclick="escribir(0)" class="numero">0</button></td>
 			</tr>
 		</table>
 
 		<script src="js/scripts.js"></script>
 	</body>
+	<table border="20" width="200" height="200">
+			<tr>
+				<td><button type="button" onclick="escribir('+')" class="numero">+</button></td>
+				<td><button type="button" onclick="escribir('-')" class="numero">-</button></td>
+				<td><button type="button" onclick="escribir(7)" class="numero">7</button></td>
+		
+		</table>
+
+		<script src="js/scripts.js"></script>
 </html>
