@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculadora</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<br/><br/>
+		<center>
+			<button type="button" onclick="escribir(0)" class="numero">0</button>
+			<button type="button" onclick="escribir(1)" class="numero">1</button>
+			<button type="button" onclick="escribir(2)" class="numero">2</button>
+			<button type="button" onclick="escribir(3)" class="numero">3</button>
+			<button type="button" onclick="escribir('+')" class="numero">+</button>
+			<button type="button" onclick="escribir('-')" class="numero">-</button>
+			<button type="button" onclick="escribir('=')" class="numero">=</button>
+			<button type="button" onclick="borrar()">Borrar</button>
+			<br/><br/>
+			<div id="resultadoop" class="resultado">0</div>
+		</center>
+
+		<table>						
+			<tr>
+				<td>
+					<input type="text" id="num1" class="numero">
+				</td>
+				<td> 
+					x
+				</td>
+				<td>
+					<input type="text" id="num2" class="numero">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<button type="button" onclick="multiplicar()" class="boton">Multiplicar</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="resultadox" class="resultado"> </div>
+				</td>
+			</tr>
+		</table>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+		<table border="1" width="100" height="100">
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>
+			</tr>
+		</table>
+
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
